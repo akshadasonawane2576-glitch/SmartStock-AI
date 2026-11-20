@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartStock AI | Business Intelligence</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #071426;
+            color: white;
+        }
+
+        nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: #0b1d35;
+    border-bottom: 1px solid #1e4565;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+        .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #22d3ee;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+        nav a {
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #22d3ee;
+}
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #22d3ee;
+        }
+
+        .hero p {
+            color: #b8c7dc;
+            font-size: 18px;
+            max-width: 650px;
+            line-height: 1.7;
+        }
+
+        .btn {
+    margin-top: 30px;
+    padding: 15px 32px;
+    background: linear-gradient(90deg, #2563eb, #06b6d4);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(6, 182, 212, 0.25);
+}
+
+        .features {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+        .features h2 {
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+    background: linear-gradient(145deg, #102640, #0b1d35);
+    padding: 30px;
+    border: 1px solid #1e4565;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+        .card h3 {
+            color: #22d3ee;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #b8c7dc;
+            line-height: 1.6;
+        }
+        html {
+    scroll-behavior: smooth;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(34, 211, 238, 0.2);
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+        footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #b8c7dc;
+    background: linear-gradient(90deg, #0b1d35, #102640);
+    border-top: 1px solid #1e4565;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+        @media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(34, 211, 238, 0.25);
+    letter-spacing: 1px;
+}
+
+    .hero p {
+    color: #b8c7dc;
+    font-size: 18px;
+    max-width: 650px;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+    margin: 0 auto;
+}
+
+    .features h2 {
+        font-size: 26px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+    <img src="smartstock-logo.png" alt="SmartStock AI Logo" style="width: 100px; height: 100px; object-fit: contain;">
+</div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Smarter Business with <span>AI</span></h1>
+
+        <p>
+            Analyze sales, manage inventory and forecast product demand
+            with SmartStock AI — your business intelligence platform.
+        </p>
+
+       <a href="http://localhost:8501" class="btn">
+    🚀 Get Started
+</a>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Powerful Features</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>📊 Sales Analytics</h3>
+                <p>Understand revenue, profit and business performance.</p>
+            </div>
+
+            <div class="card">
+                <h3>📦 Smart Inventory</h3>
+                <p>Monitor stock levels and identify inventory alerts.</p>
+            </div>
+
+            <div class="card">
+                <h3>🤖 AI Forecasting</h3>
+                <p>Estimate future product demand using machine learning.</p>
+            </div>
+
+            <div class="card">
+                <h3>📈 Business Reports</h3>
+                <p>Generate and download useful business reports.</p>
+            </div>
+
+        </div>
+    </section>
+    <section class="features">
+    <h2>Why Choose SmartStock AI?</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>⚡ Easy to Use</h3>
+            <p>Simple and user-friendly business analytics experience.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎯 Data-Driven Decisions</h3>
+            <p>Understand business performance through meaningful insights.</p>
+        </div>
+
+        <div class="card">
+            <h3>🔮 Demand Prediction</h3>
+            <p>Use machine learning to estimate future product demand.</p>
+        </div>
+    </div>
+</section>
+<section class="features" id="how-it-works">
+    <h2>How It Works</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>01. Upload Data</h3>
+            <p>Upload your sales and inventory datasets.</p>
+        </div>
+
+        <div class="card">
+            <h3>02. Analyze Business</h3>
+            <p>Explore sales performance and stock insights.</p>
+        </div>
+
+        <div class="card">
+            <h3>03. Predict Demand</h3>
+            <p>Estimate future product demand using machine learning.</p>
+        </div>
+
+        <div class="card">
+            <h3>04. Take Action</h3>
+            <p>Use reports and insights to make better decisions.</p>
+        </div>
+    </div>
+</section>
+<section class="features" id="about">
+    <h2>About SmartStock AI</h2>
+
+    <div class="card">
+        <p>
+            SmartStock AI is a business intelligence platform
+            designed to simplify sales analysis, inventory
+            management and demand forecasting.
+        </p>
+        <p>
+            Our goal is to help businesses make smarter,
+            data-driven decisions.
+        </p>
+    </div>
+</section>
+<section class="features" id="contact">
+    <h2>Contact Us</h2>
+
+    <div class="card">
+        <h3>Let's Connect</h3>
+        <p>Have questions about SmartStock AI?</p>
+        <p>Email: smartstockai@gmail.com</p>
+        <p>Developed by Akshada Sonawane</p>
+    </div>
+</section>
+
+    <footer>
+        © 2026 SmartStock AI | Developed by Akshada Sonawane
+    </footer>
+
+</body>
+</html>
